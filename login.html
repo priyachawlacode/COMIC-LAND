@@ -1,0 +1,59 @@
+
+<html>
+	<head>
+		<title>Login and Register</title>
+		<link rel="stylesheet" href="prostyle.css">
+	</head>
+	<body style="background-image: url(your_name.jpg);  height: 100%;  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+		<script src="login.js"></script>
+	
+		<div class="hero">
+	<div id="logreg" class="form-box">
+	<div class="button-box">
+	<div id="btn"></div>
+	<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+	<button type="button" class="toggle-btn" onclick="register()">Register</button>
+	</div>
+	<div class="social-icons">
+		<i class="fa fa-facebook-official"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+	</div>
+	<form id="login" class="input-group">
+	<input type="text" class="input-field" placeholder="User Id" required>
+	<input type="password" class="input-field" placeholder="Enter Password" required>
+	<input type="checkbox" class="check-box"><span>Remember Password</span>
+	<button type="submit" class="submit-btn" onclick="loginfunc()">Log In</button>
+	   </form>
+	   <form id="register"class="input-group">
+	<input type="text" class="input-field" placeholder="User Id" required>
+	<input type="email" class="input-field" placeholder="Email Id" required>
+	<input type="password" class="input-field" placeholder="Enter Password" required>
+	<input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+	<button type="submit" class="submit-btn" onclick="loginfunc()">Register</button>
+	   </form>
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	var x=document.getElementById("login");
+	var y=document.getElementById("register");
+	var z=document.getElementById("btn");
+	function register(){
+	x.style.left = "-400px";
+	y.style.left = "50px";
+	z.style.left = "110px";
+	}
+	function login(){
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0px";
+	}
+	</script>
+	
+	
+	
+	</body>
+	</html>
