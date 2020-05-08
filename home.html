@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <style>
+		.abcd{
+			transition: 1s;
+		}
+		.abcd:hover{
+			transform: scale(1.1);
+		}
+        .maindiv{
+			margin-top: 40px;
+			padding-right: 12px;
+            width:97%;
+			height:87%;
+			border: none;
+            background-image: url(comic1.jpg);
+            background-size:100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+			animation: slider 15s infinite ease;
+}
+        @keyframes slider{
+            0%{background-image: url(comic1.jpg);}
+            20%{background-image: url(comic2.jpg);}
+            40%{background-image: url(pokemon.jpg);}
+            60%{background-image: url(your_name.jpg);}
+            80%{background-image: url(comic4.jpg);}
+		}
+		
+    </style>
+
+</head>
+<body >
+	<script src="login.js"></script>
+
+	<!---------Navbar------------------------>
+
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>    <!--by adding this i can open it in mobile device size-->
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">   <!--ml-auto shifted items to the right of the webpage-->
+      <li class="nav-item ">
+        <a class="nav-link" href="#top"><h3>HOME</h3></a>
+      </li>
+      <li class="nav-item">
+        <a id="myAnchor" class="nav-link" href=""  onclick="checklogin()"><h3>COMICS</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="myvideoAnchor" href="" onclick="videochecklogin()"><h3>VIDEOS</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonials" ><h3>ABOUT US</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-us" ><h3>CONTACT US</h3></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<!----------home-------------------------------->
+<br><br>
+<section class="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-center left"  style="margin-top: 10px;">
+				<img class="promo-image" src="comicland.jpg">
+				<p class="promo-title">WELCOME<br>TO THE WORLD OF<br>COMICS AND ANIMES !</p>
+
+			</div>
+		
+			<div class="col-md-6 left" style="margin-top: 10px;">	
+                <div class="maindiv">
+                    </div>
+
+	
+</div>
+</div>
+</div>
+</section>
+
+
+<!-------------About Us---------------->
+<section id="testimonials" class="testimonials">
+	<div class="container">
+		<h1 class="title text-center">About</h1>
+		<p class="about-info">Comics is a medium used to express narratives or other ideas through images, usually combined with text. It typically takes the form of a sequence of panels of images. Textual devices such as speech balloons, captions, and onomatopoeia can indicate dialogue, narration, sound effects, or other information. The size and arrangement of panels contribute to narrative pacing. Cartooning and other forms of illustration are the most common image-making means in comics; fumetti is a form which uses photographic images. Common forms include comic strips, editorial and gag cartoons, and comic books. Since the late 20th century, bound volumes such as graphic novels, comic albums, and tankōbon have become increasingly common, while online webcomics have proliferated in the 21st century.</p>
+		<h1 class="title text-center">Our Team</h1>
+		<div class="row offset-1">
+			<div class="col-md-3 text-center ">
+				<img src="priya.jpg">
+				<p class="user-details"><b>Priya Chawla</b><br>- Full Stack Developer</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<img src="pritika1.jpg">
+				<p class="user-details"><b>Pritika Rana</b><br>- Frontend Developer</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<img src="gaurav.jpg">
+				<p class="user-details"><b>Gaurav Khatri</b><br>- Frontend Developer</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<img src="vinay.jpg">
+				<p class="user-details"><b>Vinay Kumar</b><br>- Documentation</p>
+			</div>		
+		</div>		
+	</div>
+	</section>
+
+
+
+	<!----------footer---------->
+<section id="contact-us"class="footer">
+	<div class="content-box">
+		<div class="container">
+			<h1>Get In Touch</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name" style="background-color:white;">
+						</div>
+						<div class="form-group">
+							<input type="Number" class="form-control" placeholder="Phone Number" style="background-color:white;">
+						</div>
+						<div class="form-group">
+							<input type="Email" class="form-control" placeholder="Email ID" style="background-color:white;">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
+					
+				</div>
+				<div class="col-md-6 contact-info">
+					<div class="follow">
+						<i class="fa fa-map-marker"></i><span>GBPEC, New Delhi</span>
+					</div>
+					<div class="follow">
+						<i class="fa fa-phone"></i><span>+91 123456789</span>
+					</div>
+					<div class="follow">
+						<i class="fa fa-envelope-o"></i><span>helloworld@gmail.com</span>
+					</div>
+					<div class="follow">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-youtube"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-instagram"></i>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Made by <i class="fa fa-heart-o"></i> Comic's Land</p>
+		</div>
+	</div>
+</section>
+
+
+</body>
+</html>Comics API via github
